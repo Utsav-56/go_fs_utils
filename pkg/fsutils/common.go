@@ -3,8 +3,15 @@ package fsutils
 
 import (
 	"io/fs"
+	"os"
 	"time"
 )
+
+// Mv moves a file or directory from src to dst.
+// This is a simple wrapper around os.Rename.
+func Mv(src, dst string) error {
+	return os.Rename(src, dst)
+}
 
 // getCreatedTime returns the creation time of a file or directory.
 // Since creation time is not available on all platforms (particularly Unix),
