@@ -3,10 +3,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/utsav-56/fsutils"
 	"log"
 	"os"
 	"path/filepath"
+
+	"github.com/utsav-56/go_fs_utils/fsutils"
 )
 
 func main() {
