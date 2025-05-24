@@ -1,5 +1,5 @@
 // Package fsutils provides filesystem utility functions for Go applications.
-package fsutils
+package main
 
 import (
 	"io/fs"

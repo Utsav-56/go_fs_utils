@@ -3,7 +3,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/go-fs-utils/fsutils"
+	"github.com/utsav-56/fsutils"
 	"log"
 	"os"
 	"path/filepath"

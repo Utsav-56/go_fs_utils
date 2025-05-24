@@ -3,7 +3,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/go-fs-utils/fsutils"
+	"github.com/utsav-56/fsutils"
 	"log"
 	"os"
 	"path/filepath"
@@ -58,7 +58,7 @@ func main() {
 		log.Fatalf("Failed to copy directory: %v", err)
 	}
 	fmt.Printf("Directory copied successfully: %v\n", fsutils.DirExists(destDir))
-	
+
 	// Check if subdirectories and files were copied correctly
 	fmt.Printf("Subdirectory copied: %v\n", fsutils.DirExists(filepath.Join(destDir, "subdir")))
 	fmt.Printf("File in subdirectory copied: %v\n", fsutils.FileExists(filepath.Join(destDir, "subdir", "subfile.txt")))

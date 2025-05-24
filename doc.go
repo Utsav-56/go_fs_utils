@@ -55,4 +55,4 @@ General operations work on both files and directories:
 	// Get detailed path information
 	info := fsutils.PathInfo("path")
 */
-package fsutils
+package main

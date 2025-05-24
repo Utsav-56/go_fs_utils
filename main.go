@@ -4,9 +4,7 @@ package main
 
 import (
 	"fmt"
-	
 	// Import the fsutils package to see it in action
-	_ "github.com/go-fs-utils/fsutils"
 )
 
 func main() {

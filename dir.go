@@ -1,5 +1,5 @@
 // Package fsutils provides filesystem utility functions for Go applications.
-package fsutils
+package main
 
 import (
 	"fmt"
@@ -134,12 +134,6 @@ func MoveDir(src, dst string) error {
 	if !info.IsDir() {
 		return fmt.Errorf("'%s' is not a directory, use MoveFile or Mv", src)
 	}
-	return os.Rename(src, dst)
-}
-
-// Mv is a convenience function that moves either a file or directory from src to dst.
-// This is a simple wrapper around os.Rename.
-func Mv(src, dst string) error {
 	return os.Rename(src, dst)
 }
 

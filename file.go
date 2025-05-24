@@ -1,14 +1,12 @@
 // Package fsutils provides filesystem utility functions for Go applications.
-package fsutils
+package main
 
 import (
 	"fmt"
 	"io"
-	"io/fs"
 	"os"
 	"path/filepath"
 	"strings"
-	"time"
 )
 
 // FileExists checks if a file exists at the given path.
@@ -135,10 +133,4 @@ func Cp(src, dst string) error {
 		return CopyDir(src, dst)
 	}
 	return CopyFile(src, dst)
-}
-
-// Helper function to get creation time (or modification time if creation time is not supported)
-func getCreatedTime(path string, info fs.FileInfo) time.Time {
-	// Unix doesn't support creation time, fallback to ModTime
-	return info.ModTime()
 }
