@@ -1,3 +1,3 @@
-module go_fs_utils
+module github.com/go-fs-utils/fsutils
 
-go 1.24.2
+go 1.20
